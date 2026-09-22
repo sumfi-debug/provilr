@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>موقعي الشخصي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    /* الشريط  */
+    nav {
+      background-color: #333;
+      padding: 15px;
+    }
+    nav a {
+      color: plum;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    /* الصورة الشخصية */
+    .profile-img {
+      margin-top: 20px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #333;
+    }
+
+    /* الأقسام */
+    section {
+      margin: 40px auto;
+      width: 80%;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* نموذج التواصل */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 60%;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00ffcc;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#work">أعمالنا</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <!-- الصورة والاسم -->
+  <img src="image.jpg" alt="صورتي" class="profile-img">
+  <h1>نورالدين عبدالله قاسم العمال</h1>
+
+  <!-- قسم من نحن -->
+  <section id="about">
+    <h2>من نحن</h2>
+    <p> انا نورالدين مصمم مواقع إلكترونيه و اعدل عليها وابط المواقع بي قواعد بيانات  
+        <br> إطلب ما تريد من تصميم مواقع إلا تعديلها
+        <br> وانا اقوم بي التنفيذ
+    </p>
+  </section>
+
+  <!-- قسم أعمالنا -->
+  <section id="work">
+    <h2>أعمالنا</h2>
+    <p>بعض المشاريع التي أنجزتها:   موقع شخصي، خدمات ويب.
+        <br> موقع لي محل سوبر ماركت , ومواقع تهنات 
+    </p>
+  </section>
+
+  <!-- قسم التواصل -->
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <form action="contact.html" method="post">
+      <input type="text" placeholder="اسمك" required>
+      <input type="email" placeholder="بريدك الإلكتروني" required>
+      <textarea placeholder="اكتب رسالتك هنا" rows="5" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+    <br>
+    <!-- زر واتساب -->
+    <a href="https://wa.me/779236211
+    " target="_blank">
+      <button>التواصل عبر واتساب</button>
+    </a>
+  </section>
+
+</body>
+</html>
